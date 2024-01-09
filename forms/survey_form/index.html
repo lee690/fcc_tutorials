@@ -1,13 +1,15 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Survey Form</title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form</title>
+   </head>
   
+ <body> 
     <div class="container">
-      <h1 id="title">Survey Form</h1>
+      <h1 class="title">Transportation Survey Form</h1>
       <p id="description">Please fill out the form below:</p>
       
             <form>
@@ -23,7 +25,7 @@
                 </div>
 
                 <div class="transport_dropdown">
-                    <label for="dropdown">What is your prefferred mode of transportation?</label>
+                    <label for="dropdown">What is your preferred mode of transportation?</label>
                     <select id="dropdown" name="dropdown" required>
                         <option value="" disabled selected>Select an option</option>
                         <option value="car">Private Car</option>
@@ -33,33 +35,40 @@
                     </select>
                 </div>
 
-                <div class="time-of-arr">
-                  <label>What is your time of arrival?</label>
-                      <input type="radio" name="radio-group" value="9" id="radio1" required>
-                      <label for="radio1">9PM</label>
+                <fieldset class="time-of-arr">
+                    <legend>Preferred Time of Arrival:</legend>
+                    <input type="radio" name="radio-group" value="9" id="radio1" required>
+                    <label for="radio1">9 PM</label>
                     
-                      <input type="radio" name="radio-group" value="10" id="radio2" required>
-                      <label for="radio2">10PM</label>
-                </div>
+                    <input type="radio" name="radio-group" value="9.5" id="radio2" required>
+                    <label for="radio2">9:30 PM</label>
+
+                    <input type="radio" name="radio-group" value="10" id="radio3" required>
+                    <label for="radio3">10 PM</label>
+                </fieldset>
         
-                <div class="num_stops">
-                    <label>How many stops do you have before reaching your destination?</label>
-                    <input type="checkbox" name="checkbox-group" value="check1" id="check1">
+                <fieldset class="num_stops">
+                    <legend>How many stops do you have before reaching your destination?</legend>
+                    
+                    <input type="checkbox" name="checkbox-group" value="1 Stop" id="check1">
                     <label for="check1">1 Stop</label>
-                    <input type="checkbox" name="checkbox-group" value="check2" id="check2">
+                    
+                    <input type="checkbox" name="checkbox-group" value="2 Stops" id="check2">
                     <label for="check2">2 Stops</label>
-                    <input type="checkbox" name="checkbox-group" value="check3" id="check3">
-                    <label for="check2">3 Stops</label>
-                </div>
+                    
+                    <input type="checkbox" name="checkbox-group" value="3 Stops" id="check3">
+                    <label for="check3">3 Stops</label>
+                </fieldset>
+                             
 
                 <div class="comment_section">
                     <label for="comments">Additional Comments:</label>
                     <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
                 </div>
 
-                
-                <button type="submit" id="submit">Submit</button>
-                
+                <div class="button">
+                    <button type="submit" id="submit">Submit</button>
+                 </div>
 
             </form>    
     </div>

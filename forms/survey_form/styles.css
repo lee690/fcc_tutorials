@@ -5,27 +5,29 @@ body {
     padding: 0;
   }
   
-div {
+div, fieldset {
     margin-top: 20px;
 }
 
+.title {
+  max-width: 75%;
+}
 
 .container {
   max-width: 500px;
   margin: 20px auto;
   background-color: #fff;
-  padding: 20px;
+  padding: 15px 30px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
+.text label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
 }
-
-input {
+.text input {
   width: 100%;
   padding: 8px;
   margin-bottom: 16px;
@@ -34,25 +36,96 @@ input {
   border-radius: 4px;
 }
 
-/* Optional: Add some styling to make the form visually appealing */
-input:focus {
+.text input:focus {
   outline: none;
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Optional: Style the submit button */
-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.transport_dropdown label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
-button:hover {
-  background-color: #0056b3;
+.transport_dropdown select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.transport_dropdown select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.time-of-arr {
+  border: none;
+  max-width: 300px; /* Adjust the maximum width based on your design */
+  margin: auto;
+  margin-top: 40px;
+  padding: 10px; /* Add padding for better visual appeal */
+  }
+  
+.time-of-arr legend {
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin: auto;
+}
+
+.time-of-arr input[type="radio"] {
+  margin-right: 5px; /* Add some spacing between radio buttons and labels */
+}
+
+.time-of-arr label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.num_stops {
+  border: none;
+  max-width: 300px; /* Adjust the maximum width based on your design */
+  margin: auto;
+  margin-top: 40px;
+  padding: 10px; /* Add padding for better visual appeal */
+  }
+  
+.num_stops legend {
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin: auto;
+}
+
+.num_stops input[type="radio"] {
+  margin-right: 5px; /* Add some spacing between radio buttons and labels */
+}
+
+.num_stops label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.comment_section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.comment_section textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment_section textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 
@@ -67,7 +140,6 @@ button {
     margin: auto;
     width: 50%;
   }
-  
 button:hover {
     background-color: #45a049;
   }
