@@ -8,13 +8,14 @@ body {
 }
 
 #navbar {
-  position: fixed;
+  position: absolute;
   min-width: 290px;
   top: 0px;
   left: 0px;
   width: 300px;
   height: 100%;
-  background-color: #182d2e;
+  background-color: #070e2c;
+  padding-top: 3dvh;
 }
 
 header {
@@ -28,6 +29,7 @@ header {
   color: #182d2e;
   text-align: left;
   margin: 0 0 20px 0;
+  font-weight: bold;
 }
 
 #navbar ul {
@@ -64,7 +66,7 @@ a {
 
 #main-doc {
   margin-left: 310px;
-  padding: 40px;
+  padding: 3dvh;
   margin-bottom: 50px;
 }
 
